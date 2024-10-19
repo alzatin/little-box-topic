@@ -23,14 +23,19 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1728318863113,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1728504948210
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.19682539682539682,
-            "y": 0.6973684210526316,
+            "x": 0.2,
+            "y": 0.6996904024767803,
             "uniqueID": 1728318864503,
             "ioValues": [
                 {
@@ -171,6 +176,13 @@
             "ap2Primary": false,
             "ap1ID": 1728504927517,
             "ap2ID": 1728504948210
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1728504948210,
+            "ap2ID": 1728318863113
         }
     ],
     "unitsKey": "Inches",
