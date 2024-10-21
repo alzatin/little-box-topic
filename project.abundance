@@ -14,6 +14,20 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.3359840954274354,
+            "y": 0.3900928792569659,
+            "uniqueID": 1729536440042,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.98,
@@ -30,9 +44,82 @@
             "uniqueID": 1728318877757,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.42345924453280315,
+            "y": 0.49845201238390097,
+            "uniqueID": 1729536440042,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5765407554671969,
+            "y": 0.3529411764705882,
+            "uniqueID": 1729536465440,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1729536440042
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.7713717693836978,
+            "y": 0.3436532507739938,
+            "uniqueID": 1729536471366,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1729536465440
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 50
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1729536440042,
+            "ap2ID": 1729536465440
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1729536465440,
+            "ap2ID": 1729536471366
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": [],
