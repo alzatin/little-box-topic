@@ -6,10 +6,6 @@
     "uniqueID": 1728232266982,
     "ioValues": [
         {
-            "name": "name1",
-            "ioValue": 30
-        },
-        {
             "name": "name2",
             "ioValue": 5
         }
@@ -23,27 +19,8 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1728318863113,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1728504948210
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
-        },
-        {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.2,
-            "y": 0.6996904024767803,
-            "uniqueID": 1728318864503,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 30
-                }
-            ],
-            "description": "Creates a new circle."
         },
         {
             "atomType": "Extrude",
@@ -54,7 +31,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1728318864503
+                    "ioValue": ""
                 },
                 {
                     "name": "height",
@@ -65,124 +42,21 @@
         },
         {
             "atomType": "Input",
-            "name": "name1",
-            "x": 0.04,
-            "y": 0.7317073170731707,
-            "uniqueID": 1728318869744,
-            "ioValues": [],
-            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
-        },
-        {
-            "atomType": "Input",
             "name": "name2",
             "x": 0.04,
             "y": 0.39634146341463417,
             "uniqueID": 1728318877757,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.4923928077455048,
-            "y": 0.7236842105263158,
-            "uniqueID": 1728504927517,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1728318866767
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 5
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Join",
-            "name": "Assembly",
-            "x": 0.7586206896551725,
-            "y": 0.44891640866873067,
-            "uniqueID": 1728504948210,
-            "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1728504927517
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": 1728318866767
-                }
-            ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-            "unionType": "Assembly"
         }
     ],
     "allConnectors": [
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1728318864503,
-            "ap2ID": 1728318866767
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1728318866767,
-            "ap2ID": 1728504927517
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 2",
-            "ap2Primary": false,
-            "ap1ID": 1728318866767,
-            "ap2ID": 1728504948210
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "diameter",
-            "ap2Primary": false,
-            "ap1ID": 1728318869744,
-            "ap2ID": 1728318864503
-        },
         {
             "ap1Name": "number or geometry",
             "ap2Name": "height",
             "ap2Primary": false,
             "ap1ID": 1728318877757,
             "ap2ID": 1728318866767
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "zDist",
-            "ap2Primary": false,
-            "ap1ID": 1728318877757,
-            "ap2ID": 1728504927517
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 1",
-            "ap2Primary": false,
-            "ap1ID": 1728504927517,
-            "ap2ID": 1728504948210
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 1728504948210,
-            "ap2ID": 1728318863113
         }
     ],
     "unitsKey": "Inches",
